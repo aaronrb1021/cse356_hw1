@@ -1,8 +1,7 @@
 server {
-       listen 80;
-       listen [::]:80;
+       listen 80 default_server;
 
-       server_name arberkman.cse356.compas.cs.stonybrook.edu;
+       server_name _;
 
        root /var/www/hw0;
        index hw0.html;
